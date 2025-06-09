@@ -1,0 +1,133 @@
+[debug] [2025-06-09T03:18:33.061Z] ----------------------------------------------------------------------
+[debug] [2025-06-09T03:18:33.063Z] Command:       C:\Users\BAKDAU~1\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\Bakdaulet-pk\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase emulators:start
+[debug] [2025-06-09T03:18:33.064Z] CLI Version:   14.4.0
+[debug] [2025-06-09T03:18:33.064Z] Platform:      win32
+[debug] [2025-06-09T03:18:33.064Z] Node Version:  v20.18.2
+[debug] [2025-06-09T03:18:33.064Z] Time:          Mon Jun 09 2025 08:18:33 GMT+0500 (GMT+05:00)
+[debug] [2025-06-09T03:18:33.064Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-09T03:18:33.216Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-09T03:18:33.217Z] > authorizing via signed-in user (bahaarmanov88@gmail.com)
+[debug] [2025-06-09T03:18:33.299Z] java version "21.0.6" 2025-01-21 LTS
+
+[debug] [2025-06-09T03:18:33.299Z] Java(TM) SE Runtime Environment (build 21.0.6+8-LTS-188)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.6+8-LTS-188, mixed mode, sharing)
+
+[debug] [2025-06-09T03:18:33.325Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, storage, extensions"}}
+[debug] [2025-06-09T03:18:33.326Z] Checked if tokens are valid: true, expires at: 1749442594660
+[debug] [2025-06-09T03:18:33.327Z] Checked if tokens are valid: true, expires at: 1749442594660
+[debug] [2025-06-09T03:18:33.327Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/my-first-firebase-projec-4fbc9/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-09T03:18:33.327Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/my-first-firebase-projec-4fbc9/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/my-first-firebase-projec-4fbc9
+[debug] [2025-06-09T03:18:34.635Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/my-first-firebase-projec-4fbc9/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-06-09T03:18:34.635Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/my-first-firebase-projec-4fbc9/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-09T03:18:34.636Z] Checked if tokens are valid: true, expires at: 1749442594660
+[debug] [2025-06-09T03:18:34.636Z] Checked if tokens are valid: true, expires at: 1749442594660
+[debug] [2025-06-09T03:18:34.636Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/my-first-firebase-projec-4fbc9 [none]
+[debug] [2025-06-09T03:18:35.788Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/my-first-firebase-projec-4fbc9 200
+[debug] [2025-06-09T03:18:35.788Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/my-first-firebase-projec-4fbc9 {"projectNumber":"978313623652","projectId":"my-first-firebase-projec-4fbc9","lifecycleState":"ACTIVE","name":"My first firebase project","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-02-26T16:34:23.648684Z"}
+[debug] [2025-06-09T03:18:35.797Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.797Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.797Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.797Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.797Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.798Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-06-09T03:18:35.801Z] [hub] writing locator at C:\Users\BAKDAU~1\AppData\Local\Temp\hub-my-first-firebase-projec-4fbc9.json
+[debug] [2025-06-09T03:18:35.806Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-06-09T03:18:35.808Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.808Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.808Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-09T03:18:35.808Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, database, hosting, pubsub, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, database, hosting, pubsub, dataconnect\u001b[22m"}}
+[debug] [2025-06-09T03:18:35.921Z] defaultcredentials: writing to file C:\Users\Bakdaulet-pk\AppData\Roaming\firebase\bahaarmanov88_gmail_com_application_default_credentials.json
+[debug] [2025-06-09T03:18:35.922Z] Setting GAC to C:\Users\Bakdaulet-pk\AppData\Roaming\firebase\bahaarmanov88_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Bakdaulet-pk\\AppData\\Roaming\\firebase\\bahaarmanov88_gmail_com_application_default_credentials.json"}}
+[debug] [2025-06-09T03:18:35.922Z] Checked if tokens are valid: true, expires at: 1749442594660
+[debug] [2025-06-09T03:18:35.922Z] Checked if tokens are valid: true, expires at: 1749442594660
+[debug] [2025-06-09T03:18:35.922Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-first-firebase-projec-4fbc9/adminSdkConfig [none]
+[debug] [2025-06-09T03:18:36.433Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-first-firebase-projec-4fbc9/adminSdkConfig 200
+[debug] [2025-06-09T03:18:36.434Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-first-firebase-projec-4fbc9/adminSdkConfig {"projectId":"my-first-firebase-projec-4fbc9","storageBucket":"my-first-firebase-projec-4fbc9.firebasestorage.app"}
+[debug] [2025-06-09T03:18:36.446Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-06-09T03:18:36.447Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-06-09T03:18:36.447Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Bakdaulet-pk\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","my-first-firebase-projec-4fbc9","--rules","C:\\Users\\Bakdaulet-pk\\AndroidStudioProjects\\instagramClone\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Bakdaulet-pk\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"my-first-firebase-projec-4fbc9\",\"--rules\",\"C:\\\\Users\\\\Bakdaulet-pk\\\\AndroidStudioProjects\\\\instagramClone\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-06-09T03:18:52.968Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-06-09T03:18:53.581Z] Temp file directory for storage emulator: C:\Users\BAKDAU~1\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\BAKDAU~1\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2025-06-09T03:18:53.589Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\Users\Bakdaulet-pk\AndroidStudioProjects\instagramClone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Bakdaulet-pk\\AndroidStudioProjects\\instagramClone\\functions\" for Cloud Functions..."}}
+[debug] [2025-06-09T03:18:53.593Z] Validating nodejs source
+[debug] [2025-06-09T03:18:54.745Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-06-09T03:18:54.745Z] Building nodejs source
+[debug] [2025-06-09T03:18:54.745Z] Failed to find version of module node: reached end of search path C:\Users\Bakdaulet-pk\AndroidStudioProjects\instagramClone\functions\node_modules
+[warn] !  functions: You've requested "node" version "22", but the standalone Firebase CLI comes with bundled Node "20". 
+[info] +  functions: To use a different Node.js version, consider removing the standalone Firebase CLI and switching to "firebase-tools" on npm. 
+[debug] [2025-06-09T03:18:54.747Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-09T03:18:54.751Z] Found firebase-functions binary at 'C:\Users\Bakdaulet-pk\AndroidStudioProjects\instagramClone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8792
+
+[debug] [2025-06-09T03:18:55.258Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-06-09T03:18:59.296Z] defaultcredentials: writing to file C:\Users\Bakdaulet-pk\AppData\Roaming\firebase\bahaarmanov88_gmail_com_application_default_credentials.json
+[debug] [2025-06-09T03:18:59.297Z] Setting GAC to C:\Users\Bakdaulet-pk\AppData\Roaming\firebase\bahaarmanov88_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Bakdaulet-pk\\AppData\\Roaming\\firebase\\bahaarmanov88_gmail_com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2025-06-09T03:18:59.307Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth       │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage    │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  To verify the phone number +77773624969, use the code 383887. {"metadata":{"emulator":{"name":"auth"},"message":"To verify the phone number +77773624969, use the code 383887."}}
+[info] i  To verify the phone number +77773624969, use the code 195724. {"metadata":{"emulator":{"name":"auth"},"message":"To verify the phone number +77773624969, use the code 195724."}}
+[debug] [2025-06-09T04:03:43.491Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast [none]
+[debug] [2025-06-09T04:03:43.491Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast {"eventId":"f6ec5ce6-c282-4fb1-9af7-e6c8cb5a7b5b","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/my-first-firebase-projec-4fbc9","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2025-06-09T04:03:43.490Z","data":{"uid":"8h8glZDzj4KS8OPkjcpOJ6rxJTWk","phoneNumber":"+77773624969","metadata":{"creationTime":"2025-06-09T04:03:43.489Z","lastSignInTime":"2025-06-09T04:03:43.489Z"},"customClaims":{},"providerData":[{"providerId":"phone","phoneNumber":"+77773624969","rawId":"+77773624969"}]}}
+[debug] [2025-06-09T04:03:43.498Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast 200
+[debug] [2025-06-09T04:03:43.498Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2025-06-09T04:57:47.105Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast [none]
+[debug] [2025-06-09T04:57:47.105Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast {"eventId":"d7d0ad58-b4b5-488d-b47e-10ad72aa6c6f","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/my-first-firebase-projec-4fbc9","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2025-06-09T04:57:47.104Z","data":{"uid":"dbX5MJH0ac9zCmwFrAV48lXyL0bA","email":"kerimkulov@mail.ru","emailVerified":false,"metadata":{"creationTime":"2025-06-09T04:57:47.104Z","lastSignInTime":"2025-06-09T04:57:47.104Z"},"customClaims":{},"providerData":[{"providerId":"password","email":"kerimkulov@mail.ru","federatedId":"kerimkulov@mail.ru","rawId":"kerimkulov@mail.ru"}]}}
+[debug] [2025-06-09T04:57:47.108Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast 200
+[debug] [2025-06-09T04:57:47.108Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/my-first-firebase-projec-4fbc9/trigger_multicast {"status":"multicast_acknowledged"}
