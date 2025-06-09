@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signUpButton">Sign Up</string>
+    <string name="loginButton">Log in"</string>
+
+    <string name="alreadyHaveAccount">Already have an account? Log in</string>
+    <string name="doNotHaveAccount">Don\'t have an account? Sign up</string>
+
+    <string name="InstagramLogotip">INSTAGRAM</string>
+
+    <string name="createAcc">Create a new account</string>
+    <string name="backBtn">Back button</string>
+
+    <string name="highlights">Highlights</string>
+
+    <string name="nextBtn">Next</string>
+    <string name="signupWithEmail">Sign up with email</string>
+    <string name="signupWithNumber">Sign up with phone number</string>
+
+    <string name="close">Close icon</string>
+
+    <string name="directMessageButton">Direct Message Button</string>
+    <string name="notificationButton">Notification Button</string>
+
+    <string name="moreVertical">More Vertical Button</string>
+
+    <string name="likedCount">Liked by %d people</string>
+    
+    <string name="showMore">more</string>"
+    <string name="showLess">less</string>
+
+    <string name="createContent">Create Content button</string>
+    <string name="moreHorizontal">More horizontal button</string>
+
+    <string-array name="signUpErrorMessages">
+        <item>Email is required</item>
+        <item>Invalid email format</item>
+        <item>Password is required</item>
+        <item>Password must be at least 6 characters</item>
+    </string-array>
+
+    <string name="email">Email, username or phone number</string>
+    <string name="password">Password</string>
+    <string name="repeatPassword">Repeat password</string>
+
+    <bool name="isPasswordVisible">false</bool>
+
+    <string name="instagramLogo">Instagram</string>
+
+    <string name="forgotPassword">Forgot Password?</string>
+</resources>
