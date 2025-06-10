@@ -94,8 +94,6 @@ dependencies {
     //библиотека от Google, оборачивающая ActivityResultContracts в удобные Compose-инструменты
     implementation("com.google.accompanist:accompanist-permissions:0.34.0-alpha")
 
-
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
