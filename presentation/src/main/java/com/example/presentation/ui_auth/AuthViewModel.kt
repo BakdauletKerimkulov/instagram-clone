@@ -5,7 +5,6 @@ import android.util.Log
 import android.util.Patterns
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.domain.CreateUserUseCase
 import com.example.domain.SignInEmailUseCase
 import com.example.domain.SignOutUseCase
@@ -136,7 +135,7 @@ class AuthViewModel @Inject constructor(
             ) { _authEvents.tryEmit(AuthEvent.Success) }
 
             InputType.Username -> {
-                _authEvents.tryEmit(AuthEvent.Message("Username input type is not supported yet"))
+                _authEvents.tryEmit(AuthEvent.Message("Username login is not supported yet"))
                 _authState.update { it.copy(isLoading = false) }
             }
         }
@@ -225,7 +224,8 @@ class AuthViewModel @Inject constructor(
                         val user = task.result?.user
                         if (user != null) {
                             pendingUser = PendingUser(
-                                uid = user.uid, phoneNumber = user.phoneNumber
+                                uid = user.uid, phoneNumber = user.phoneNumber,
+                                createdAt = user.metadata?.creationTimestamp
                             )
                         }
                     } else {
@@ -253,7 +253,8 @@ class AuthViewModel @Inject constructor(
                     _authState.update { it.copy(isLoading = false) }
 
                     Log.d("AuthViewModel", "signUpWithEmailAndPassword: $user")
-                    if (user != null) pendingUser = PendingUser(uid = user.uid, email = user.email)
+                    if (user != null) pendingUser = PendingUser(uid = user.uid, email = user.email,
+                        createdAt = user.createdAt)
 
                     _authEvents.tryEmit(AuthEvent.Success)
                 },
@@ -341,6 +342,8 @@ data class PendingUser(
     val phoneNumber: String? = null,
     val username: String? = null,
     val birthday: Long? = null,
+    val photoUrl: String? = null,
+    val createdAt: Long? = null,
 )
 
 enum class AuthMode {

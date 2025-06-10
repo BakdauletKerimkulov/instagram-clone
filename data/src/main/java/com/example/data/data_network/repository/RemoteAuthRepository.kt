@@ -14,5 +14,5 @@ interface RemoteAuthRepository {
 
     suspend fun updateDisplayName(displayName: String) : Result<Unit>
 
-    val userState: StateFlow<FirebaseUser?>
+    val userState: Flow<FirebaseUser?>
 }

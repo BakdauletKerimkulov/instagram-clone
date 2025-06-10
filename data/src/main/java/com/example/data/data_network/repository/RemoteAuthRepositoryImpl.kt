@@ -12,8 +12,12 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.UserProfileChangeRequest
 import kotlinx.coroutines.TimeoutCancellationException
+import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.callbackFlow
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withTimeout
 import javax.inject.Inject
@@ -56,10 +60,35 @@ class RemoteAuthRepositoryImpl @Inject constructor(
         return auth.currentUser != null
     }
 
-    override val userState: StateFlow<FirebaseUser?> = MutableStateFlow(auth.currentUser).apply {
-        Log.d(TAG, "userState initialized. User is ${value?.email ?: "No user"}")
-        auth.addAuthStateListener { value = it.currentUser }
-    }
+    override val userState: Flow<FirebaseUser?> = callbackFlow {
+        val listener = FirebaseAuth.AuthStateListener {
+            val currentUser = it.currentUser
+
+            if (currentUser != null) {
+                currentUser.reload().addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        val reloadedUser = auth.currentUser
+                        if (reloadedUser != null) {
+                            trySend(reloadedUser)
+                        } else {
+                            trySend(null)
+                        }
+                    } else {
+                        Log.e(TAG, "Reload failed: ${task.exception}")
+                        trySend(null)
+                    }
+                }
+            } else {
+                trySend(null)
+            }
+        }
+
+        auth.addAuthStateListener(listener)
+
+        awaitClose {
+            auth.removeAuthStateListener(listener)
+        }
+    }.distinctUntilChanged()
 
     override fun getCurrentUser(): FirebaseUser? {
         Log.d(TAG, "getCurrentUser called. User is ${auth.currentUser?.email ?: "No user"}")
